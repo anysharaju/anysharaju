@@ -8,7 +8,8 @@ st.title("💧 AI JalRakshak")
 st.subheader("Predict whether water is Safe or Unsafe")
 
 # Load model
-model = pickle.load(open("water_model.pkl", "rb"))
+model = pickle.load(open("data/water_model.pkl", "rb"))
+
 
 # Input fields
 pH = st.slider("pH Level", 0.0, 14.0, 7.0)
